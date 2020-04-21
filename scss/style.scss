@@ -1,0 +1,128 @@
+@import "./share";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #0099ff, #0e5f95);
+
+    @include responsive(extra-large-devices) {
+        background-color: white;
+        background-image: url("../img/bg.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.2rem;
+    //align-items: center;
+}
+
+.l-logo {
+}
+
+.c-logo {
+    color: white;
+    &__iconLogo {
+    }
+}
+
+.l-menu {
+}
+.c-button {
+    all: unset;
+}
+.h-hide {
+    display: none;
+}
+.h-desktop {
+    @include responsive(medium-devices) {
+        display: none;
+    }
+}
+.c-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 85vw;
+    background: rgba(#011627, 0.98);
+    text-align: center;
+
+    @include responsive(medium-devices) {
+        position: static;
+        background: inherit;
+        height: auto;
+        width: auto;
+        display: block;
+    }
+    &__head {
+        font-size: 1.125rem;
+        padding: 2rem;
+        color: white;
+        background-color: #011224;
+    }
+    &__list {
+        list-style-type: none;
+
+        @include responsive(medium-devices) {
+            display: flex;
+        }
+    }
+    &__item {
+        padding: 1.4rem;
+        border-bottom: 1px solid rgba(#e4e6e3, 0.4);
+
+        @include responsive(medium-devices) {
+            border: none;
+            padding: 0 0 0 2rem;
+        }
+
+        &:first-child {
+            font-size: 1.125rem;
+            padding: 2rem;
+            color: white;
+            background-color: #011224;
+
+            @include responsive(medium-devices) {
+                display: none;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 0.875rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+
+        @include responsive(extra-large-devices) {
+            color: #0e5f95;
+            border-bottom: none;
+            transition: all 0.1s ease-in-out;
+            &:hover,
+            &:focus {
+                color: #498fb5;
+                border-bottom: 1px solid #498fb5;
+            }
+        }
+    }
+}
+
+.l-main {
+}
+
+.l-first-section {
+}

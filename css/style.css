@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0099ff), to(#0e5f95));
+  background: linear-gradient(to bottom, #0099ff, #0e5f95);
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: white;
+    background-image: url("../img/bg.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.l-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1.2rem;
+}
+
+.c-logo {
+  color: white;
+}
+
+.c-button {
+  all: unset;
+}
+
+.h-hide {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .h-desktop {
+    display: none;
+  }
+}
+
+.c-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 85vw;
+  background: rgba(1, 22, 39, 0.98);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-menu {
+    position: static;
+    background: inherit;
+    height: auto;
+    width: auto;
+    display: block;
+  }
+}
+
+.c-menu__head {
+  font-size: 1.125rem;
+  padding: 2rem;
+  color: white;
+  background-color: #011224;
+}
+
+.c-menu__list {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.c-menu__item {
+  padding: 1.4rem;
+  border-bottom: 1px solid rgba(228, 230, 227, 0.4);
+}
+
+@media only screen and (min-width: 768px) {
+  .c-menu__item {
+    border: none;
+    padding: 0 0 0 2rem;
+  }
+}
+
+.c-menu__item:first-child {
+  font-size: 1.125rem;
+  padding: 2rem;
+  color: white;
+  background-color: #011224;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-menu__item:first-child {
+    display: none;
+  }
+}
+
+.c-menu__link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+  .c-menu__link {
+    color: #0e5f95;
+    border-bottom: none;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .c-menu__link:hover, .c-menu__link:focus {
+    color: #498fb5;
+    border-bottom: 1px solid #498fb5;
+  }
+}
+/*# sourceMappingURL=style.css.map */
