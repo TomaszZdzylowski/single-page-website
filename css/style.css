@@ -23,6 +23,7 @@ body {
     background-color: white;
     background-image: url("../img/bg.svg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -58,6 +59,7 @@ body {
 }
 
 .c-menu {
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
@@ -139,5 +141,44 @@ body {
     color: #498fb5;
     border-bottom: 1px solid #498fb5;
   }
+}
+
+.l-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.l-first-section {
+  padding: 6rem 1.2rem;
+}
+
+.c-first-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-first-section__head {
+  width: 45%;
+  line-height: 1.6;
+}
+
+.c-first-section__description {
+  font-size: 0.875rem;
+  padding: 3rem 0;
+  line-height: 1.4;
+  opacity: 0.85;
 }
 /*# sourceMappingURL=style.css.map */
