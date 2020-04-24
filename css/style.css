@@ -10,12 +10,12 @@ html,
 body {
   font-size: 100%;
   height: 100%;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   body {
-    background-color: white;
     background-image: url("../img/bg2.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,10 +41,10 @@ body {
 
 .c-button--primary:focus, .c-button--primary:hover {
   background-color: #0099ff;
-  color: white;
+  color: #ffffff;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .c-button--primary {
     color: #0e5f95;
     background-color: white;
@@ -66,10 +66,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 1.2rem;
-  background-color: #0e5f95;
+  background-color: #0099ff;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .l-header {
     background-color: unset;
   }
@@ -79,7 +79,7 @@ body {
   width: 150px;
   -o-object-fit: contain;
      object-fit: contain;
-  color: white;
+  color: #ffffff;
 }
 
 .c-logo__iconLogo {
@@ -118,13 +118,6 @@ body {
   }
 }
 
-.c-menu__head {
-  font-size: 1.125rem;
-  padding: 2rem;
-  color: white;
-  background-color: #011224;
-}
-
 .c-menu__list {
   list-style-type: none;
 }
@@ -152,7 +145,7 @@ body {
 .c-menu__item:first-child {
   font-size: 1.125rem;
   padding: 2rem;
-  color: white;
+  color: #ffffff;
   background-color: #011224;
 }
 
@@ -166,10 +159,10 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .c-menu__link {
     color: #0e5f95;
     border-bottom: none;
@@ -188,10 +181,16 @@ body {
   margin-right: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .l-main {
+    color: #ffffff;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .l-main {
     width: 100%;
-    max-width: 960px;
+    max-width: 1060px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -199,8 +198,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .l-main {
-    color: white;
-    max-width: 1570px;
+    max-width: 1600px;
   }
 }
 
@@ -222,7 +220,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60vh;
+  height: 90vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -236,6 +234,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .c-welcome {
+    height: 60vh;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -272,15 +271,10 @@ body {
 }
 
 .c-welcome__head {
+  letter-spacing: 2px;
   font-size: 1.725rem;
   width: 250px;
   line-height: 1.4;
-}
-
-@media only screen and (min-width: 768px) {
-  .c-welcome__head {
-    text-align: left;
-  }
 }
 
 .c-welcome__description {
@@ -295,7 +289,6 @@ body {
 @media only screen and (min-width: 768px) {
   .c-welcome__description {
     font-size: 1.125rem;
-    padding: 0;
   }
 }
 
@@ -308,9 +301,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

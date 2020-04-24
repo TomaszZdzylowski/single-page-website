@@ -9,12 +9,12 @@ html,
 body {
     font-size: 100%;
     height: 100%;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
 }
 
 body {
-    @include responsive(extra-large-devices) {
-        background-color: white;
+    @include responsive(medium-devices) {
         background-image: url("../img/bg2.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -37,10 +37,10 @@ body {
         &:focus,
         &:hover {
             background-color: #0099ff;
-            color: white;
+            color: $font-primary;
         }
-        @include responsive(extra-large-devices) {
-            // border: 1px solid #0e5f95;
+
+        @include responsive(medium-devices) {
             color: #0e5f95;
             background-color: white;
 
@@ -58,9 +58,9 @@ body {
     align-items: center;
     padding: 2rem 1.2rem;
 
-    background-color: #0e5f95;
+    background-color: #0099ff;
 
-    @include responsive(extra-large-devices) {
+    @include responsive(medium-devices) {
         background-color: unset;
     }
 }
@@ -71,7 +71,7 @@ body {
 .c-logo {
     width: 150px;
     object-fit: contain;
-    color: white;
+    color: $font-primary;
     &__iconLogo {
         width: 100%;
         height: auto;
@@ -105,12 +105,7 @@ body {
         width: auto;
         display: block;
     }
-    &__head {
-        font-size: 1.125rem;
-        padding: 2rem;
-        color: white;
-        background-color: #011224;
-    }
+
     &__list {
         list-style-type: none;
 
@@ -130,7 +125,7 @@ body {
         &:first-child {
             font-size: 1.125rem;
             padding: 2rem;
-            color: white;
+            color: $font-primary;
             background-color: #011224;
 
             @include responsive(medium-devices) {
@@ -143,9 +138,9 @@ body {
         font-size: 0.875rem;
         font-weight: 500;
         text-decoration: none;
-        color: white;
+        color: $font-primary;
 
-        @include responsive(extra-large-devices) {
+        @include responsive(medium-devices) {
             color: #0e5f95;
             border-bottom: none;
             transition: all 0.1s ease-in-out;
@@ -162,17 +157,19 @@ body {
     color: #011627;
     margin-left: 1rem;
     margin-right: 1rem;
+    @include responsive(medium-devices) {
+        color: $font-primary;
+    }
 
     @include responsive(large-devices) {
         width: 100%;
-        max-width: 960px;
+        max-width: 1060px;
         margin-left: auto;
         margin-right: auto;
     }
 
     @include responsive(extra-large-devices) {
-        color: white;
-        max-width: 1570px;
+        max-width: 1600px;
     }
 }
 
@@ -185,13 +182,14 @@ body {
 .c-welcome {
     width: 100%;
     display: flex;
-    height: 60vh;
+    height: 90vh;
     justify-content: center;
 
     @include responsive(small-devices) {
         padding: 0 2rem;
     }
     @include responsive(medium-devices) {
+        height: 60vh;
         justify-content: space-between;
     }
 
@@ -211,13 +209,10 @@ body {
     }
 
     &__head {
+        letter-spacing: 2px;
         font-size: 1.725rem;
         width: 250px;
         line-height: 1.4;
-
-        @include responsive(medium-devices) {
-            text-align: left;
-        }
     }
 
     &__description {
@@ -229,14 +224,15 @@ body {
 
         @include responsive(medium-devices) {
             font-size: 1.125rem;
-            padding: 0;
+            //padding: 0;
         }
     }
     &__ilustration {
         display: none;
+
         @include responsive(medium-devices) {
             display: flex;
-            align-items: center;
+            align-self: center;
         }
     }
 }
