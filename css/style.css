@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.svg-social-circle {
+  fill: #0099ff;
+  -webkit-transition: all 0.1 ease-in-out;
+  transition: all 0.1 ease-in-out;
+}
+
+.svg-social-circle:hover, .svg-social-circle:focus {
+  fill: #0e5f95;
+}
+
+.svg-social-path {
+  fill: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -387,6 +401,21 @@ body {
   background: #f0f1ee;
   text-align: center;
   padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-footer:before, .c-footer:after {
+    content: "";
+    height: 164px;
+    border: 1px solid #0099ff;
+    opacity: 0.4;
+  }
 }
 
 .c-footer__content {
@@ -403,6 +432,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-footer__content {
+    width: 350px;
+  }
 }
 
 .c-footer__head {
@@ -437,5 +473,9 @@ body {
   font-size: 0.875rem;
   color: #9b9aac;
   opacity: 0.95;
+}
+
+.icon {
+  fill: red;
 }
 /*# sourceMappingURL=style.css.map */

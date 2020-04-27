@@ -1,0 +1,11 @@
+.svg-social-circle {
+    fill: #0099ff;
+    transition: all 0.1 ease-in-out;
+    &:hover,
+    &:focus {
+        fill: #0e5f95;
+    }
+}
+.svg-social-path {
+    fill: #ffffff;
+}

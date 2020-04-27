@@ -316,12 +316,28 @@ body {
     background: #f0f1ee;
     text-align: center;
     padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    @include responsive(medium-devices) {
+        &:before,
+        &:after {
+            content: "";
+            height: 164px;
+            border: 1px solid #0099ff;
+            opacity: 0.4;
+        }
+    }
 
     &__content {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        width: 100%;
+
+        @include responsive(medium-devices) {
+            width: 350px;
+        }
     }
 
     &__head {
@@ -350,4 +366,7 @@ body {
         color: #9b9aac;
         opacity: 0.95;
     }
+}
+.icon {
+    fill: red;
 }
