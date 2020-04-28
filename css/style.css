@@ -501,8 +501,8 @@ body {
 }
 
 .c-footer__socialBox:hover, .c-footer__socialBox:focus {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .c-footer__descryption {
