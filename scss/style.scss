@@ -7,6 +7,7 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     font-size: 100%;
     height: 100%;
     width: 100%;
@@ -25,29 +26,30 @@ body {
     all: unset;
     cursor: pointer;
     text-align: center;
+    font-size: 1.125rem;
 
     &--primary {
         border-radius: 26px;
         padding: 1rem 0.8rem;
         width: 200px;
-        border: 1px solid #0099ff;
-        color: #0099ff;
+        border: 1px solid $blue-primary;
+        color: $blue-primary;
         transition: all 0.1s ease-in-out;
         box-shadow: 0px 5px 10px 0px rgba(14, 95, 149, 0.75);
 
         &:focus,
         &:hover {
-            background-color: #0099ff;
+            background-color: $blue-primary;
             color: $font-primary;
         }
 
         @include responsive(medium-devices) {
             color: #0e5f95;
-            background-color: white;
+            background-color: $color-primary;
 
             &:focus,
             &:hover {
-                border: 1px solid white;
+                border: 1px solid $color-primary;
             }
         }
     }
@@ -59,14 +61,11 @@ body {
     align-items: center;
     padding: 2rem 1.2rem;
 
-    background-color: #0099ff;
+    background-color: $blue-primary;
 
     @include responsive(medium-devices) {
         background-color: unset;
     }
-}
-
-.l-logo {
 }
 
 .c-logo {
@@ -79,8 +78,6 @@ body {
     }
 }
 
-.l-menu {
-}
 .h-hide {
     display: none;
 }
@@ -137,7 +134,7 @@ body {
 
     &__link {
         font-size: 0.875rem;
-        font-weight: 500;
+        font-weight: 600;
         text-decoration: none;
         color: $font-primary;
 
@@ -179,7 +176,7 @@ body {
     height: 90vh;
 }
 .c-welcome {
-    color: #011627;
+    color: $font-dark;
     width: 100%;
     display: flex;
     height: 90vh;
@@ -188,6 +185,7 @@ body {
     @include responsive(small-devices) {
         padding: 0 2rem;
     }
+
     @include responsive(medium-devices) {
         color: $font-primary;
         height: 60vh;
@@ -210,7 +208,6 @@ body {
     }
 
     &__head {
-        //letter-spacing: 2px;
         font-size: 1.725rem;
         width: 250px;
         line-height: 1.4;
@@ -218,16 +215,14 @@ body {
 
     &__description {
         font-size: 0.875rem;
-        // padding: 3rem 0;
         line-height: 1.8;
         opacity: 0.85;
-        display: flex;
 
         @include responsive(medium-devices) {
             font-size: 1.125rem;
-            //padding: 0;
         }
     }
+
     &__ilustration {
         display: none;
 
@@ -241,6 +236,7 @@ body {
 .l-about-us {
     width: 100%;
 }
+
 .l-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -254,12 +250,12 @@ body {
 
     @include responsive(large-devices) {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 .c-about-us {
     &__head {
-        text-align: center;
-        padding: 6rem;
+        @include cardHead;
     }
 
     &__card {
@@ -278,11 +274,8 @@ body {
         text-align: center;
     }
 
-    &__title {
-    }
-
     &__description {
-        color: #9b9aac;
+        color: $font-lessDark;
         font-size: 0.875rem;
         padding: 2rem 0;
         opacity: 0.95;
@@ -290,24 +283,50 @@ body {
     }
 
     &__cardImage {
-        width: 100%;
+        @include cardImage;
     }
 }
+
 .l-technologies {
     padding-bottom: 6rem;
 }
+
 .c-technologies {
     &__head {
-        text-align: center;
-        padding: 6rem 0;
+        @include cardHead;
     }
+
     &__card {
+        opacity: 0.7;
+        position: relative;
+        transition: 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            transform: translateY(-5px);
+
+            &::before {
+                position: absolute;
+                top: 0;
+                content: "";
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($blue-hoverCard, 0.7);
+            }
+        }
     }
+
     &__title {
-        text-align: center;
+        color: $font-primary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+
     &__cardImage {
-        width: 100%;
+        @include cardImage;
     }
 }
 .l-footer {
@@ -315,15 +334,16 @@ body {
 .c-footer {
     background: #f0f1ee;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
+
     @include responsive(medium-devices) {
         &:before,
         &:after {
             content: "";
             height: 164px;
-            border: 1px solid #0099ff;
+            border: 1px solid $blue-primary;
             opacity: 0.4;
         }
     }
@@ -341,7 +361,7 @@ body {
     }
 
     &__head {
-        color: #0099ff;
+        color: $blue-primary;
     }
 
     &__socials {
@@ -361,12 +381,10 @@ body {
             transform: scale(1.04);
         }
     }
+
     &__descryption {
         font-size: 0.875rem;
-        color: #9b9aac;
+        color: $font-lessDark;
         opacity: 0.95;
     }
-}
-.icon {
-    fill: red;
 }
