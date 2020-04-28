@@ -1,4 +1,10 @@
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-family: "Montserrat";
+}
+
 @import "./share";
+
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +51,7 @@ body {
 
         @include responsive(medium-devices) {
             color: #0e5f95;
+            font-weight: 600;
             background-color: $color-primary;
 
             &:focus,
@@ -134,7 +141,7 @@ body {
 
     &__link {
         font-size: 0.875rem;
-        font-weight: 600;
+        font-weight: 500;
         text-decoration: none;
         color: $font-primary;
 
@@ -240,10 +247,10 @@ body {
 .l-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
-    grid-gap: 3em;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 2rem;
 
-    @include responsive(medium-devices) {
+    @include responsive(small-devices) {
         padding: 0 2rem;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -278,7 +285,6 @@ body {
         color: $font-lessDark;
         font-size: 0.875rem;
         padding: 2rem 0;
-        opacity: 0.95;
         line-height: 1.6;
     }
 
@@ -297,9 +303,9 @@ body {
     }
 
     &__card {
-        opacity: 0.7;
         position: relative;
         transition: 0.2s ease-in-out;
+        opacity: 0.8;
 
         &:hover,
         &:focus {
@@ -329,8 +335,7 @@ body {
         @include cardImage;
     }
 }
-.l-footer {
-}
+
 .c-footer {
     background: #f0f1ee;
     text-align: center;
@@ -385,6 +390,5 @@ body {
     &__descryption {
         font-size: 0.875rem;
         color: $font-lessDark;
-        opacity: 0.95;
     }
 }
