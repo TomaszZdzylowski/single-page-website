@@ -123,6 +123,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   color: #ffffff;
+  margin-left: -8px;
 }
 
 .c-logo__iconLogo {
@@ -341,12 +342,12 @@ body {
       grid-template-columns: repeat(auto-fit, 1fr);
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 1rem;
 }
 
 @media only screen and (min-width: 576px) {
   .l-grid {
-    padding: 0 2rem;
+    padding: 0 1rem;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[3];
@@ -356,6 +357,7 @@ body {
 
 @media only screen and (min-width: 992px) {
   .l-grid {
+    grid-gap: 3rem;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -429,7 +431,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 255, 0.7);
+  background-color: rgba(14, 95, 149, 0.7);
 }
 
 .c-technologies__title {

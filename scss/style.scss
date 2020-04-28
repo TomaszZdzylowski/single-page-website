@@ -96,6 +96,7 @@ body {
     width: 150px;
     object-fit: contain;
     color: $font-primary;
+    margin-left: -8px;
     &__iconLogo {
         width: 100%;
         height: auto;
@@ -255,15 +256,16 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 3rem;
+    grid-gap: 1rem;
 
     @include responsive(small-devices) {
-        padding: 0 2rem;
+        padding: 0 1rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
 
     @include responsive(large-devices) {
+        grid-gap: 3rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }

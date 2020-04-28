@@ -1,143 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508.924" height="194.64" viewBox="0 0 508.924 194.64">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="361" height="86.197" viewBox="0 0 361 86.197">
   <defs>
-    <style>
-      .cls-1, .cls-11, .cls-2, .cls-8 {
-        fill: none;
-      }
-
-      .cls-1, .cls-4, .cls-5 {
-        stroke: #fff;
-      }
-
-      .cls-1, .cls-2, .cls-8 {
-        stroke-width: 5px;
-      }
-
-      .cls-1 {
-        mix-blend-mode: hard-light;
-        isolation: isolate;
-      }
-
-      .cls-2 {
-        stroke: #29fb37;
-      }
-
-      .cls-12, .cls-3, .cls-5 {
-        fill: #fff;
-      }
-
-      .cls-3, .cls-4, .cls-5 {
-        font-size: 60px;
-        font-family: ArialMT, Arial;
-      }
-
-      .cls-4, .cls-6, .cls-9 {
-        fill: #f873ef;
-      }
-
-      .cls-7 {
-        fill: #29fb37;
-      }
-
-      .cls-8 {
-        stroke: #f873ef;
-      }
-
-      .cls-9 {
-        opacity: 0.6;
-      }
-
-      .cls-10, .cls-12 {
-        stroke: none;
-      }
-
-      .cls-13 {
-        filter: url(#Line_10);
-      }
-
-      .cls-14 {
-        filter: url(#_2);
-      }
-
-      .cls-15 {
-        filter: url(#_);
-      }
-
-      .cls-16 {
-        filter: url(#INTO_CODE);
-      }
-
-      .cls-17 {
-        filter: url(#Line_11);
-      }
-    </style>
-    <filter id="Line_11" x="27.354" y="6.757" width="454" height="29" filterUnits="userSpaceOnUse">
-      <feOffset dy="1" input="SourceAlpha"/>
+    <filter id="INTO_CODE_" x="0" y="9.197" width="361" height="77" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feFlood flood-color="#29fb37"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="INTO_CODE" x="32.854" y="60.757" width="444" height="94" filterUnits="userSpaceOnUse">
-      <feOffset dy="5" input="SourceAlpha"/>
+    <filter id="Line_10" x="3.607" y="0" width="126.031" height="29" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="4" result="blur-2"/>
-      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feFlood flood-color="#29fb37"/>
       <feComposite operator="in" in2="blur-2"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <filter id="_" x="413.854" y="59.757" width="64" height="96" filterUnits="userSpaceOnUse">
-      <feOffset dy="5" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="4" result="blur-3"/>
-      <feFlood flood-color="#fff" flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur-3"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-    <filter id="_2" x="173.854" y="59.757" width="101" height="96" filterUnits="userSpaceOnUse">
-      <feOffset dy="5" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="4" result="blur-4"/>
-      <feFlood flood-color="#fff" flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur-4"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-    <filter id="Line_10" x="39.354" y="54.757" width="144" height="29" filterUnits="userSpaceOnUse">
-      <feOffset dy="1" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="4" result="blur-5"/>
-      <feFlood flood-color="#29fb37"/>
-      <feComposite operator="in" in2="blur-5"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
-  <g id="Group_5" data-name="Group 5" transform="translate(-805.146 -554.243)">
-    <g id="Group_6" data-name="Group 6" transform="translate(-46 -43)">
-      <g id="Rectangle_3" data-name="Rectangle 3" class="cls-1" transform="translate(877 623)">
-        <path class="cls-10" d="M15,0H453a4,4,0,0,1,4,4V128a15,15,0,0,1-15,15H4a4,4,0,0,1-4-4V15A15,15,0,0,1,15,0Z"/>
-        <path class="cls-11" d="M15,2.5H453A1.5,1.5,0,0,1,454.5,4V128A12.5,12.5,0,0,1,442,140.5H4A1.5,1.5,0,0,1,2.5,139V15A12.5,12.5,0,0,1,15,2.5Z"/>
+  <g id="Group_13" data-name="Group 13" transform="translate(-809 -412.803)">
+    <g id="Group_12" data-name="Group 12" transform="translate(821 429.099)">
+      <g id="Group_11" data-name="Group 11" transform="translate(0 -0.099)">
+        <g transform="matrix(1, 0, 0, 1, -12, -16.2)" filter="url(#INTO_CODE_)">
+          <text id="INTO_CODE_2" data-name="INTO &lt;/CODE&gt;" transform="translate(12 16.2)" fill="#fff" font-size="48" font-family="ArialMT, Arial"><tspan x="0" y="43">INTO </tspan><tspan y="43" fill="#f873ef">&lt;</tspan><tspan y="43" fill="#29fb37">/</tspan><tspan y="43">CODE</tspan><tspan y="43" fill="#f873ef">&gt;</tspan></text>
+        </g>
       </g>
-      <g class="cls-17" transform="matrix(1, 0, 0, 1, 851.15, 597.24)">
-        <line id="Line_11-2" data-name="Line 11" class="cls-2" x2="430" transform="translate(39.35 20.26)"/>
-      </g>
-      <g class="cls-16" transform="matrix(1, 0, 0, 1, 851.15, 597.24)">
-        <text id="INTO_CODE-2" data-name="INTO    CODE" class="cls-3" transform="translate(44.85 67.76)"><tspan x="0" y="54" xml:space="preserve">INTO    CODE</tspan></text>
-      </g>
-      <g class="cls-15" transform="matrix(1, 0, 0, 1, 851.15, 597.24)">
-        <text id="_3" data-name="&gt;" class="cls-4" transform="translate(426.85 67.76)"><tspan x="0" y="54">&gt;</tspan></text>
-      </g>
-      <g class="cls-14" transform="matrix(1, 0, 0, 1, 851.15, 597.24)">
-        <text id="_4" data-name=" &lt;/" class="cls-5" transform="translate(186.85 67.76)"><tspan x="0" y="54"> </tspan><tspan class="cls-6" y="54">&lt;</tspan><tspan class="cls-7" y="54">/</tspan></text>
-      </g>
-      <g class="cls-13" transform="matrix(1, 0, 0, 1, 851.15, 597.24)">
-        <line id="Line_10-2" data-name="Line 10" class="cls-2" x2="120" transform="translate(51.35 68.26)"/>
-      </g>
-      <line id="Line_12" data-name="Line 12" class="cls-8" x2="40" transform="translate(902.5 650.5)"/>
-      <line id="Line_13" data-name="Line 13" class="cls-8" x2="40" transform="translate(908.5 650.5)"/>
-      <g id="Polygon_2" data-name="Polygon 2" class="cls-9" transform="translate(1303.502 597.243) rotate(45)">
-        <path class="cls-10" d="M 77.58577728271484 39 L 2.414222240447998 39 L 40 1.414222240447998 L 77.58577728271484 39 Z"/>
-        <path class="cls-12" d="M 40 2.828422546386719 L 4.828422546386719 38 L 75.17157745361328 38 L 40 2.828422546386719 M 40 0 L 80 40 L 0 40 L 40 0 Z"/>
-      </g>
-      <g id="Polygon_3" data-name="Polygon 3" class="cls-9" transform="translate(907.715 791.882) rotate(-135)">
-        <path class="cls-10" d="M 77.58577728271484 39 L 2.41422176361084 39 L 39.9999885559082 1.414222240447998 L 77.58577728271484 39 Z"/>
-        <path class="cls-12" d="M 39.9999885559082 2.828422546386719 L 4.828422546386719 38 L 75.17157745361328 38 L 39.9999885559082 2.828422546386719 M 39.9999885559082 0 L 80 40 L 0 40 L 39.9999885559082 0 Z"/>
-      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 809, 412.8)" filter="url(#Line_10)">
+      <line id="Line_10-2" data-name="Line 10" x2="102.031" transform="translate(15.61 13.5)" fill="none" stroke="#29fb37" stroke-width="5"/>
     </g>
   </g>
 </svg>
