@@ -255,7 +255,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 3rem;
 
     @include responsive(small-devices) {
         padding: 0 2rem;
