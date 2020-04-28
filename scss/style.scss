@@ -253,6 +253,7 @@ body {
     @include responsive(small-devices) {
         padding: 0 2rem;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     @include responsive(large-devices) {
@@ -387,7 +388,7 @@ body {
         }
     }
 
-    &__descryption {
+    &__author {
         font-size: 0.875rem;
         color: $font-lessDark;
     }
