@@ -17,6 +17,68 @@
   fill: #ffffff;
 }
 
+@-webkit-keyframes text-focus-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-from-left {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-left {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-in-from-right {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-right {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,21 +176,20 @@ body {
 
 @media only screen and (min-width: 768px) {
   .l-header {
+    padding: 2rem;
     background-color: unset;
   }
 }
 
 .c-logo {
-  width: 150px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 125px;
+  height: 25px;
   color: #ffffff;
   margin-left: -8px;
 }
 
 .c-logo__iconLogo {
   width: 100%;
-  height: auto;
 }
 
 .h-hide {
@@ -230,16 +291,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 90vh;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .l-welcome {
+    padding: 0 2rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1580px;
+    max-width: 1680px;
   }
+}
+
+.l-main {
+  overflow-x: hidden;
 }
 
 .c-welcome {
@@ -252,12 +318,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media only screen and (min-width: 576px) {
-  .c-welcome {
-    padding: 0 2rem;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -284,6 +344,8 @@ body {
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-animation: slide-in-from-left 0.6s ease-in-out;
+          animation: slide-in-from-left 0.6s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -301,7 +363,7 @@ body {
 
 .c-welcome__head {
   font-size: 1.725rem;
-  width: 250px;
+  width: 300px;
   line-height: 1.4;
 }
 
@@ -313,7 +375,14 @@ body {
 
 @media only screen and (min-width: 768px) {
   .c-welcome__description {
+    text-align: justify;
     font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .c-welcome__description {
+    width: 500px;
   }
 }
 
@@ -328,6 +397,8 @@ body {
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
+    -webkit-animation: slide-in-from-right 0.6s ease-in-out;
+            animation: slide-in-from-right 0.6s ease-in-out;
   }
 }
 
@@ -343,11 +414,11 @@ body {
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
   grid-gap: 1rem;
+  padding: 0 1rem;
 }
 
 @media only screen and (min-width: 576px) {
   .l-grid {
-    padding: 0 1rem;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[3];
@@ -367,7 +438,7 @@ body {
 
 .c-about-us__head {
   text-align: center;
-  padding: 6rem;
+  padding: 6rem 0;
 }
 
 .c-about-us__card {
@@ -409,7 +480,7 @@ body {
 
 .c-technologies__head {
   text-align: center;
-  padding: 6rem;
+  padding: 6rem 0;
 }
 
 .c-technologies__card {

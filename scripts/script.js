@@ -15,9 +15,13 @@
 
             }
         }
-
-
     });
+
+    menuList.addEventListener('click', (event) => {
+        if (event.target.closest("a")) {
+            menuList.classList.toggle('h-hide');
+        }
+    })
 
 
 })()

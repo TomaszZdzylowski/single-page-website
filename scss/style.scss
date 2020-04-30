@@ -88,18 +88,19 @@ body {
     background-color: $blue-primary;
 
     @include responsive(medium-devices) {
+        padding: 2rem;
         background-color: unset;
     }
 }
 
 .c-logo {
-    width: 150px;
-    object-fit: contain;
+    width: 125px;
+    height: 25px;
     color: $font-primary;
     margin-left: -8px;
+
     &__iconLogo {
         width: 100%;
-        height: auto;
     }
 }
 
@@ -181,14 +182,18 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 90vh;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
-    @include responsive(large-devices) {
+    @include responsive(extra-large-devices) {
+        padding: 0 2rem;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1580px;
+        max-width: 1680px;
     }
+}
+.l-main {
+    overflow-x: hidden;
 }
 .c-welcome {
     color: $font-dark;
@@ -196,10 +201,6 @@ body {
     display: flex;
     height: 90vh;
     justify-content: center;
-
-    @include responsive(small-devices) {
-        padding: 0 2rem;
-    }
 
     @include responsive(medium-devices) {
         color: $font-primary;
@@ -213,6 +214,7 @@ body {
         flex-direction: column;
         text-align: center;
         justify-content: space-around;
+        animation: slide-in-from-left 0.6s ease-in-out;
 
         @include responsive(medium-devices) {
             justify-content: space-between;
@@ -224,7 +226,7 @@ body {
 
     &__head {
         font-size: 1.725rem;
-        width: 250px;
+        width: 300px;
         line-height: 1.4;
     }
 
@@ -234,7 +236,11 @@ body {
         opacity: 0.85;
 
         @include responsive(medium-devices) {
+            text-align: justify;
             font-size: 1.125rem;
+        }
+        @include responsive(extra-large-devices) {
+            width: 500px;
         }
     }
 
@@ -244,6 +250,7 @@ body {
         @include responsive(medium-devices) {
             display: flex;
             align-self: center;
+            animation: slide-in-from-right 0.6s ease-in-out;
         }
     }
 }
@@ -257,9 +264,9 @@ body {
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 1rem;
+    padding: 0 1rem;
 
     @include responsive(small-devices) {
-        padding: 0 1rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
