@@ -23,5 +23,8 @@
         }
     })
 
+    const header = document.querySelector('.js-header');
+    const mainSection = document.querySelector('.js-main')
+
 
 })()

@@ -90,7 +90,7 @@ html,
 body {
   scroll-behavior: smooth;
   font-size: 100%;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   font-family: "Montserrat", sans-serif;
 }
@@ -160,7 +160,7 @@ body {
 }
 
 .l-header {
-  height: 10vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +170,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 1.2rem;
+  padding: 1.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   background-color: #0099ff;
 }
 
@@ -290,9 +293,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  height: 100vh;
+  margin: 2rem 2rem 0 2rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -314,7 +316,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 90vh;
+  height: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -362,14 +364,20 @@ body {
 }
 
 .c-welcome__head {
-  font-size: 1.725rem;
+  font-size: 1.125rem;
   width: 300px;
   line-height: 1.4;
 }
 
+@media only screen and (min-width: 576px) {
+  .c-welcome__head {
+    font-size: 1.725rem;
+  }
+}
+
 .c-welcome__description {
   font-size: 0.875rem;
-  line-height: 1.8;
+  line-height: 1.5;
   opacity: 0.85;
 }
 
@@ -414,7 +422,6 @@ body {
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
   grid-gap: 1rem;
-  padding: 0 1rem;
 }
 
 @media only screen and (min-width: 576px) {
@@ -428,6 +435,7 @@ body {
 
 @media only screen and (min-width: 992px) {
   .l-grid {
+    padding: 0 1rem;
     grid-gap: 3rem;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -457,6 +465,10 @@ body {
 .c-about-us__content {
   padding: 1rem;
   text-align: center;
+}
+
+.c-about-us__title {
+  color: #0052ab;
 }
 
 .c-about-us__description {
@@ -590,8 +602,8 @@ body {
 }
 
 .c-footer__socialBox:hover, .c-footer__socialBox:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
 }
 
 .c-footer__author {
