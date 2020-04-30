@@ -79,7 +79,6 @@ body {
 }
 .l-header {
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,8 +86,6 @@ body {
     position: fixed;
     top: 0;
     z-index: 10;
-
-    background-color: $blue-primary;
 
     @include responsive(medium-devices) {
         padding: 2rem;
@@ -185,7 +182,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    margin: 2rem 2rem 0 2rem;
+    margin: 4rem 2rem 0 2rem;
 
     @include responsive(extra-large-devices) {
         padding: 0 2rem;
@@ -201,7 +198,7 @@ body {
     color: $font-dark;
     width: 100%;
     display: flex;
-    height: 90%;
+    height: 100%;
     justify-content: center;
 
     @include responsive(medium-devices) {
@@ -215,7 +212,7 @@ body {
         align-items: center;
         flex-direction: column;
         text-align: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         animation: slide-in-from-left 0.6s ease-in-out;
 
         @include responsive(medium-devices) {
@@ -416,5 +413,12 @@ body {
     &__author {
         font-size: 0.875rem;
         color: $font-lessDark;
+    }
+}
+.nav-scrolled {
+    transition: background-color 0.25s ease-in;
+    background-color: rgba(#0052ab, 0.9);
+    a {
+        color: white;
     }
 }

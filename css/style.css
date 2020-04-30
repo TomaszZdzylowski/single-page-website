@@ -174,7 +174,6 @@ body {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: #0099ff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -294,7 +293,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  margin: 2rem 2rem 0 2rem;
+  margin: 4rem 2rem 0 2rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -316,7 +315,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 90%;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -344,8 +343,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-animation: slide-in-from-left 0.6s ease-in-out;
           animation: slide-in-from-left 0.6s ease-in-out;
 }
@@ -609,5 +609,15 @@ body {
 .c-footer__author {
   font-size: 0.875rem;
   color: #9b9aac;
+}
+
+.nav-scrolled {
+  -webkit-transition: background-color 0.25s ease-in;
+  transition: background-color 0.25s ease-in;
+  background-color: rgba(0, 82, 171, 0.9);
+}
+
+.nav-scrolled a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
