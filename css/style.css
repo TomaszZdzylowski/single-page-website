@@ -175,6 +175,7 @@ body {
   padding: 1.2rem;
   position: fixed;
   top: 0;
+  background-color: rgba(0, 82, 171, 0.9);
   z-index: 10;
 }
 
