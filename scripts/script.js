@@ -20,13 +20,12 @@
     const header = document.querySelector('.js-header');
     const mainSection = document.querySelector('.js-main');
     const options = {
-        rootMargin: "-250px"
+        rootMargin: "25px"
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                console.log(entry.target)
+            if (entry.isIntersecting) {
                 header.classList.add('nav-scrolled');
             } else {
                 header.classList.remove('nav-scrolled');
@@ -38,3 +37,6 @@
     observer.observe(mainSection);
 
 })()
+window.scroll({
+    behavior: "smooth"
+})

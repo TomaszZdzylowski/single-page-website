@@ -175,7 +175,7 @@ body {
   padding: 1.2rem;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 82, 171, 0.9);
+  background-color: rgba(0, 153, 255, 0.9);
   z-index: 10;
 }
 
@@ -274,13 +274,13 @@ body {
 
 @media only screen and (min-width: 768px) {
   .c-menu__link {
-    color: #0e5f95;
-    border-bottom: none;
+    color: #0052ab;
+    border-bottom: 1px solid transparent;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
   }
   .c-menu__link:hover {
-    color: #498fb5;
+    opacity: 0.7;
     border-bottom: 1px solid #498fb5;
   }
 }
@@ -349,6 +349,8 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-animation: slide-in-from-left 0.6s ease-in-out;
+          animation: slide-in-from-left 0.6s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -380,8 +382,6 @@ body {
   font-size: 0.875rem;
   line-height: 1.5;
   opacity: 0.85;
-  -webkit-animation: slide-in-from-left 0.6s ease-in-out;
-          animation: slide-in-from-left 0.6s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -617,10 +617,16 @@ body {
 .nav-scrolled {
   -webkit-transition: background-color 0.25s ease-in;
   transition: background-color 0.25s ease-in;
-  background-color: rgba(0, 82, 171, 0.9);
+  background-color: rgba(0, 153, 255, 0.9);
 }
 
-.nav-scrolled a {
-  color: white;
+.nav-scrolled .c-menu__link {
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-scrolled .c-menu__link:hover, .nav-scrolled .c-menu__link:focus {
+  opacity: 0.8;
+  border-bottom: 1px solid #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
