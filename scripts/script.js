@@ -37,6 +37,3 @@
     observer.observe(mainSection);
 
 })()
-window.scroll({
-    behavior: "smooth"
-})
